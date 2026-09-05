@@ -1,0 +1,291 @@
+window-size: 1022 646
+window-pos: 450 218
+window-maximized: true
+uuid: jTJJNL7sq2trX0ux9+mvMWgWR+a/vOQwbAsSr+7u/jZvDBCw4rrxMw==
+locale: pt
+profile: 1
+enableHighlightMouseTarget: true
+classicControl: false
+smartLeftClick: false
+talkOnRightClick: false
+drawEffectOnTop: false
+floorFading: 500
+asyncTxtLoading: false
+showExpiryOnUnusedItems: true
+graphicalCooldown: true
+cooldownSecond: true
+actionBarShowBottom1: true
+fullscreen: false
+forceEffectOptimization: false
+actionBarShowBottom2: false
+actionBarShowBottom3: false
+actionBarShowLeft1: false
+autoSwitchPreset: false
+actionBarShowLeft2: false
+actionBarShowLeft3: false
+actionBarShowRight1: false
+allActionBar79: false
+actionBarShowRight2: false
+actionBarShowRight3: false
+actionTooltip: true
+showSpellParameters: true
+showHKObjectsBars: true
+showAssignedHKButton: true
+hudScale: 0
+actionBarLeftLocked: false
+actionBarRightLocked: false
+setOwnSpellEffectAlphaScroll: 100
+setOtherPlayerSpellEffectAlphaScroll: 100
+setCreatureSpellEffectAlphaScroll: 100
+setBossAreaCreatureEffectAlphaScroll: 100
+showInfoBanner: true
+actionBarBottomLocked: false
+showDragIcon: true
+allActionBar13: true
+allActionBar46: false
+enableAudio: false
+framesRarity: frames
+showExpiryInContainers: true
+optimizeFps: true
+rightJoystick: false
+showPing: false
+opacityScrollbar: 35
+distFromCenScrollbar: 0
+setMissileAlphaScroll: 100
+lootControlMode: 0
+showFps: false
+floorViewMode: 1
+mouseControlMode: 0
+vsync: true
+shadowFloorIntensity: 30
+displayHarmony: true
+showStatusMessagesInConsole: true
+crosshair: default
+showLevelsInConsole: true
+displayText: true
+showOutfitsOnList: true
+displayNames: true
+displayHealth: true
+displayMana: true
+returnDisablesChat: false
+smartWalk: false
+creatureInformationScale: 0
+moveStack: false
+staticTextScale: 0
+showEventMessagesInConsole: true
+animatedTextScale: 0
+showTimestampsInConsole: true
+showLeftExtraPanel: false
+showPrivateMessagesInConsole: true
+showOthersStatusMessagesInConsole: false
+showLeftPanel: true
+showLootMessagesOnScreen: true
+showRightExtraPanel: false
+floatingEffect: false
+showSpellGroupCooldowns: true
+showPrivateMessagesOnScreen: true
+openMaximized: false
+dontStretchShrink: false
+backgroundFrameRate: 501
+setEffectAlphaScroll: 100
+enableMusicSound: true
+musicSoundVolume: 100
+enableLights: true
+ambientLight: 0
+limitVisibleDimension: false
+nativeCursor: false
+antialiasingMode: 1
+showHighlightedUnderline: false
+showAnimatedCursor: true
+walkTurnDelay: 100
+showInfoMessagesInConsole: true
+walkTeleportDelay: 50
+autoChaseOverride: true
+walkStairsDelay: 50
+showExpiryInInvetory: true
+hotkeyDelay: 70
+containers:
+  sortNestedContainers: 0
+  useManualSortMode: 1
+  currentSortMode: none
+  sortContainersFirst: 0
+healthcircle_opacity: 0.35
+healthcircle_hpcircle: false
+healthcircle_mpcircle: false
+healthcircle_distfromcenter: 0
+BattleList_0:
+  isLocked: false
+  filters:
+    sortDescByHitPoints: false
+    sortDescByName: false
+    sortDescByDisplayTime: false
+    sortAscByDisplayTime: true
+    sortAscByName: false
+    sortAscByDistance: false
+    sortDescByDistance: false
+    sortAscByHitPoints: false
+  hideButtons:
+    hideSorcerers: false
+    hideMonks: false
+    hideSummons: false
+    hideMembersOwnGuild: false
+    hidePlayers: false
+    hideNPCs: false
+    hideMonsters: false
+    hideSkulls: false
+    hideParty: false
+    hideKnights: false
+    hidePaladins: false
+    hideDruids: false
+BattleListInstances:
+UseIgnoreList: false
+UseWhiteList: false
+IgnorePrivateMessages: false
+IgnoreYelling: false
+statsbar_dimension: hide
+statsbar_placement: hide
+host: http://127.0.0.1:8088/login.php
+port: 8088
+client-version: 1525
+staylogged: true
+httpLogin: true
+account: 
+password: 
+autologin: true
+autoEnterGame: true
+characterlist-show-hidden: true
+characterlist-sort-column: 1
+characterlist-sort-ascending: true
+autoReconnect: false
+last-used-character: Admin
+last-used-world: OTServBR-Global
+bestiaryTracker_Admin:
+  filters:
+    sortByName: false
+    ShortByPercentage: false
+    sortByKills: true
+    sortByAscending: true
+    sortByDescending: false
+  character: Admin
+bosstiaryTracker_Admin:
+  filters:
+    sortByName: false
+    ShortByPercentage: false
+    sortByKills: true
+    sortByAscending: true
+    sortByDescending: false
+  character: Admin
+ImbuementTracker:
+  filters:
+    showNoImbuements: true
+    showLessThan1h: true
+    showBetween1hAnd3h: true
+    showMoreThan3h: true
+VipList:
+  Grouped: false
+  OfflineVips: false
+  vipSortOrder:
+BattleList:
+  filters:
+    sortDescByName: false
+    sortAscByDisplayTime: true
+    sortDescByDisplayTime: false
+    sortAscByDistance: false
+    sortDescByDistance: false
+    sortAscByHitPoints: false
+    sortDescByHitPoints: false
+    sortAscByName: false
+onlyCaptureGameWindow: false
+enableScreenshots: false
+LevelUp: true
+SkillUp: true
+Achievement: true
+BestiaryEntryUnlocked: false
+BestiaryEntryCompleted: false
+TreasureFound: false
+ValuableLoot: false
+BossDefeated: false
+DeathPvE: true
+DeathPvP: false
+PlayerKill: false
+PlayerKillAssist: false
+PlayerAttacking: false
+HighestDamageDealt: false
+HighestHealingDone: false
+LowHealth: false
+GiftofLifeTriggered: true
+controls-preset-current: Knight
+CharMiniWindows:
+  Admin:
+    xpAnalyserMiniWindow:
+      height: 225
+    skillWindow:
+      parentId: gameRightPanel
+      index: 5
+    taskboardKillTracker:
+      height: 175
+    preyTracker:
+      parentId: gameRightPanel
+      index: 1
+    vipWindow:
+      parentId: gameRightPanel
+      index: 6
+    buttons:
+      parentId: gameRightPanel
+      index: 2
+    battleWindow:
+      parentId: gameRightPanel
+      index: 3
+    unjustifiedPointsWindow:
+      parentId: gameRightPanel
+      index: 4
+Minimap:
+  zoomFull: 0
+  flags:
+  zoom: 0
+LastCombatControls:
+  Admin:
+    fightMode: 2
+    safeFight: true
+    pvpMode: 0
+    chaseMode: 0
+lastChannelsOpen:
+  Admin:
+    World Chat: 3
+skills-hide:
+  Admin:
+    miscStats_visible: true
+    offenceStats_visible: true
+    defenceStats_visible: true
+game_interface:
+  splitterMarginBottom: 200
+IgnorePlayers:
+WhitelistedPlayers:
+terminal-window:
+  poped: false
+controls-presets:
+  - Druid
+  - Knight
+  - Paladin
+  - Sorcerer
+  - Monk
+listKeybindsPanel: Knight
+game_console:
+  showHighlightedUnderline: false
+  wasdMode: false
+ServerList:
+  127.0.0.1:
+    protocol: 1100
+    httpLogin: false
+    autologin: false
+    account: 
+    password: 
+    port: 7171
+  http://127.0.0.1:8088/login.php:
+    account: 
+    useAuthenticator: false
+    httpLogin: true
+    autologin: true
+    protocol: 1525
+    password: 
+    port: 8088

@@ -1,0 +1,68 @@
+diff --git a/init.lua b/init.lua
+index f859a3b..83e0880 100644
+--- a/init.lua
++++ b/init.lua
+@@ -73,25 +73,25 @@ if ENABLE_SERVERS then
+         -- @field httpLogin Enables HTTP-based login on the server
+         -- @field useAuthenticator Enables additional authentication layer
+         --
+-        ["http://127.0.0.1/login.php"] = {
+-            port = 80,
++        ["http://127.0.0.1:8088/login.php"] = {
++            port = 8088,
+             protocol = 1511,
+             httpLogin = true,
+             useAuthenticator = false
+         },
+ 
+-        -- External server
++        -- Local Canary server (classic protocol, direct to game server port)
+         ---
+-        -- Configuration for external server ip.net.
++        -- Configuration for local Canary server, classic protocol.
+         -- @class table
+-        -- @name ip_net
++        -- @name local_canary
+         -- @field port TCP port used for connection
+         -- @field protocol Protocol identifier used by the server
+         -- @field httpLogin Indicates if the server allows HTTP login
+         --
+-        ["ip.net"] = {
++        ["127.0.0.1"] = {
+             port = 7171,
+-            protocol = 860,
++            protocol = 1100,
+             httpLogin = false
+         }
+     }
+diff --git a/modules/client_entergame/characterlist.lua b/modules/client_entergame/characterlist.lua
+index c6b980b..5ceea95 100644
+--- a/modules/client_entergame/characterlist.lua
++++ b/modules/client_entergame/characterlist.lua
+@@ -57,6 +57,7 @@ local SHOW_PREMIUM_WIDGETS = true
+ local autoReconnectButton
+ local autoReconnectEvent
+ local lastLogout = 0
++local autoEnterGameDone = false
+ local function removeAutoReconnectEvent() --prevent
+     if autoReconnectEvent then
+         removeEvent(autoReconnectEvent)
+@@ -895,6 +896,18 @@ function CharacterList.show()
+     else
+         autoReconnectButton:setText('Auto reconnect: ' .. reconnectStatus)
+     end
++
++    -- Enter the world automatically on the first character list of the session.
++    -- One-shot so that logging out still returns to a usable character list.
++    if g_settings.getBoolean('autoEnterGame', false) and not autoEnterGameDone then
++        autoEnterGameDone = true
++        addEvent(function()
++            if CharacterList.isVisible() then
++                g_logger.info('[autoEnterGame] entering world automatically')
++                CharacterList.doLogin()
++            end
++        end)
++    end
+ end
+ 
+ function CharacterList.hide(showLogin)

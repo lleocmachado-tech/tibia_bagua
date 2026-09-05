@@ -1,0 +1,14 @@
+6:dataPackDirectory = "data-otservbr-global"
+63:ip = "127.0.0.1"
+64:allowOldProtocol = true
+66:loginProtocolPort = 7171
+67:gameProtocolPort = 7172
+74:serverName = "OTServBR-Global"
+85:packetCompressionLevel = 0
+425:mapName = "otservbr"
+447:mysqlHost = "127.0.0.1"
+448:mysqlUser = "root"
+449:mysqlPass = ""
+450:mysqlDatabase = "otserv"
+451:mysqlDatabaseBackup = false
+468:authType = "password" -- 'session' | 'password'

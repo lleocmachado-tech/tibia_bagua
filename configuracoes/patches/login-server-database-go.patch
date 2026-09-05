@@ -1,0 +1,21 @@
+diff --git a/src/configs/database.go b/src/configs/database.go
+index fce22b3..740edcf 100644
+--- a/src/configs/database.go
++++ b/src/configs/database.go
+@@ -21,7 +21,7 @@ type DBConfigs struct {
+ 
+ func (dbConfigs *DBConfigs) GetConnectionString() string {
+ 	return fmt.Sprintf(
+-		"%s:%s@tcp(%s:%d)/%s?parseTime=true",
++		"%s:%s@tcp(%s:%d)/%s?parseTime=true&allowNativePasswords=true&allowCleartextPasswords=true",
+ 		dbConfigs.User,
+ 		dbConfigs.Pass,
+ 		dbConfigs.Host,
+@@ -44,6 +44,6 @@ func GetDBConfigs() DBConfigs {
+ 		Port: GetEnvInt(EnvDBPortKey, 3306),
+ 		Name: GetEnvStr(EnvDBNameKey, "canary"),
+ 		User: GetEnvStr(EnvDBUserKey, "canary"),
+-		Pass: GetEnvStr(EnvDBPassKey, "canary"),
++		Pass: GetEnvStr(EnvDBPassKey, ""),
+ 	}
+ }

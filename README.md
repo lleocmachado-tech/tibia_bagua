@@ -13,10 +13,26 @@ ser usável. O servidor, o cliente e os assets **não** estão aqui — veja
 
 | Arquivo | Para quê |
 |---|---|
+| [INSTALACAO.md](INSTALACAO.md) | **Remontar o ambiente do zero**, na ordem certa |
 | [PROJETO.md](PROJETO.md) | Estado do projeto: inventário, o que dá para mexer, o que não pode quebrar |
 | [GUIA-EDICAO.pdf](GUIA-EDICAO.pdf) | Guia ilustrado de edição de mapa e sprites, 23 páginas com telas reais |
 | [EDITORES.md](EDITORES.md) | Referência rápida dos editores |
 | [LEIA-ME.md](LEIA-ME.md) | Como jogar e o que precisou ser corrigido para funcionar |
+
+## configuracoes/
+
+As correções e ajustes que fazem o conjunto funcionar — a parte que não se baixa
+de lugar nenhum:
+
+| Arquivo | O que é |
+|---|---|
+| `patches/login-server-database-go.patch` | DSN com `allowNativePasswords` (sem isso o Go recusa a senha vazia do MySQL) |
+| `patches/otclient.patch` | Lista de servidores + gancho `autoEnterGame` (entra no mundo sozinho, uma vez por sessão) |
+| `sql/criar-conta-admin.sql` | Conta `admin` e personagem `Admin` |
+| `login-server.env.example` | `.env` do login-server |
+| `otclient-config.otml` | Perfil do cliente: protocolo 1525, autologin (sem credenciais) |
+| `editor-mapa.reg` | Assets, pastas de monstros/NPCs e posição inicial do editor de mapa |
+| `canary-config-essencial.txt` | As linhas do `config.lua` que importam |
 
 ## Atalhos
 
