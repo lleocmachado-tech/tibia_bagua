@@ -1,0 +1,35 @@
+# ---------------------------------------------------------------
+# Este repositorio guarda SO as ferramentas e a documentacao.
+# O servidor, o cliente e os assets NAO sao versionados aqui:
+#   - passam do limite de 100 MB por arquivo do GitHub
+#   - os sprites do Tibia sao propriedade da CipSoft
+#   - canary e otclient tem os proprios repositorios upstream
+# Veja o README.md para como remontar o ambiente.
+# ---------------------------------------------------------------
+
+# Servidor, cliente e login-server (vendorizados, ~2 GB)
+TIBIA BAGUA/
+
+# Lixo do pip (sys.prefix caiu na pasta do projeto)
+Lib/
+Scripts/
+pyvenv.cfg
+__pycache__/
+*.pyc
+
+# Nunca versionar credenciais
+*.env
+.env
+!*.env.example
+
+# Backups e artefatos locais
+backups/
+*.backup
+*.otbm
+*.dat
+*.spr
+*.lzma
+
+# Windows
+Thumbs.db
+desktop.ini
